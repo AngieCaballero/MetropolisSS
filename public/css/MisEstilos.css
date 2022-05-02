@@ -1,0 +1,386 @@
+
+
+.bg-ScrollBaja {
+
+    background-color: rgba(210, 130, 2, 0.6);
+}
+
+.SecondMenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.contenedor {
+    position: relative;
+    background: #1c1c1c;
+    overflow: hidden;
+    height: 650px;
+}
+
+.contenedor nav {
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+
+.contenedor .resena {
+    position: relative;
+    z-index: 2;
+    top: 40vh;
+    left: 10vw;
+}
+
+.resena h2, p {
+    color: #fff;
+}
+
+.contenedor::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.contenedor1:before {
+    
+    background-image: url('../Images/Img1.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    transition: all .5s ease-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.contenedor2:before {
+    background-image: url('../Images/Img2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    transition: all .5s ease-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.contenedor3:before {
+    background-image: url('../Images/Img3.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    transition: all .5s ease-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.contenedor4:before {
+    background-image: url('../Images/Img4.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    transition: all .5s ease-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.contenedor5:before {
+
+    background-image: url('../Images/Img5.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    transition: all .5s ease-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition: all .5s ease-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social ul li a {
+  display: inline-block;
+  color:#fff;
+  background: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+
+.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-link {background: #00abf0;}
+.social ul li .icon-tripadvisor {background: #42eb8e;}
+.social ul li .icon-youtube {background: #ae181f;}
+.social ul li .icon-mail {background: #666666;}
+.social ul li .icon-whatsapp {background: #2bb319;}
+
+.social ul li a:hover {
+  background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+  padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+@media only screen and (max-width: 575px) {
+ 
+    .social {
+        display: none;
+    }
+
+    .contenedor {
+        height: 430px;
+    }
+
+    .contenedor .resena {
+        top: 20vh;
+        left: 10vw;
+    }
+}
+
+@media only screen and (min-height: 1300px) {
+    .contenedor .resena {
+        top: 20vh;
+    }
+}
+
+@media only screen and (min-height: 1150px) {
+    .contenedor .resena {
+        top: 25vh;
+    }
+}
+
+.servis:hover .im {
+
+    filter: brightness(1);
+
+}
+
+.nav-item {
+
+}
+
+.linea {
+    height: 4px;
+    width: 0%;
+    /*background-color: #e99002;*/
+    transition: .5s;
+}
+
+.nav-item:hover > .linea{
+    width: 100%;
+    transition: .5s;
+}
+
+.card{
+    transition-duration: 0.6s;
+    clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 50%,
+    100% 100%,
+    50%  100%,
+    0  100%,
+    0   50%,
+    0   0%
+  );
+  }
+  .servis:hover .card{
+  clip-path: polygon(
+    50% 0,
+    50% 0,
+    100% 50%,
+    100% 50%,
+    50%  100%,
+    50%  100%,
+    0   50%,
+    0   50%
+  );
+  }
+  
+  .card-img-overlay{
+    transition-duration: 0.6s;
+  }
+  .servis:hover .card-img-overlay{
+    transform: scale(0.9);
+  }
+
+  .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      width: 95%;
+      margin: auto;
+      gap: 10px;
+      padding: 40px 0;
+      overflow: hidden;
+  }
+
+  .galeria > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  }
+
+  .galeria img {
+      width: 100%;
+      vertical-align: top;
+      height: 300px;
+      object-fit: cover;
+      transition: .5s;
+  }
+
+  .galeria a:hover img{
+      filter: blur(-5px);
+      transform: rotate(10deg) scale(1.3);
+      transition: .5s;
+  }
+
+  .light-box {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .5);
+      transition: transform .3s ease-in-out;
+      width: 100%;
+      height: 100vh;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: scale(0);
+  }
+
+  .light-box > img {
+      width: 75vw;
+      max-height: 80vh;
+  }
+
+  .light-box:target {
+      transform: scale(1);
+  }
+
+  .close {
+      display: block;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+  }
+
+  .btn-social {
+      border-radius: 30%;
+      width: 40px;
+      transition: .4s;
+  }
+
+  .btn-social:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .4s;
+  }
+
+  .classes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /*width: 95%;*/
+    margin: auto;
+    gap: 10px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+  .classes > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  }
+
+  .classes img {
+      width: 100%;
+      vertical-align: top;
+      height: 200px;
+      object-fit: cover;
+      transition: .5s;
+  }
+
+  .classes a:hover img{
+      filter: blur(-5px);
+      transform: rotate(10deg) scale(1.3);
+      transition: .5s;
+  }
+
+  .classprice > div {
+      border-radius: 15px;
+  }
+
+  /*.carousel-item {
+      height: 340px;
+  }*/
+
+  .exp img {
+      margin: 10px;
+      width: 90%;
+      box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+  }
+
+  @media only screen and (min-width: 992px) 
+  {
+      .exp{
+          padding: 0 100px 0;
+      }
+  }
+
+  @media only screen and (max-width: 991px) 
+  {
+      .exp{
+          padding: 0 45px 0;
+      }
+  }
+
+ /* @media only screen and (max-width: 1201px) {
+    .carousel-item{
+        height: 360px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .carousel-item{
+        height: auto;
+    }
+  }*/
+
+  .abs-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
